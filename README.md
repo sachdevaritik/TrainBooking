@@ -1,4 +1,8 @@
-Please go thorugh the readme for sample request and response for each user request.
+Please review the sample requests and corresponding responses for each command a user can provide, and execute the associated actions.
+After running the application , we will configure the Db details:
+Hit below url to check the Tables details.
+H2 url:http://localhost:8085/h2-console
+
 1) Add train
 Url: http://localhost:8085/train/add
 Request:
