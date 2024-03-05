@@ -1,0 +1,54 @@
+http://localhost:8085/train/add
+{
+    "trainNumber": 23454,
+    "trainName": "VandeBharat",
+    "stations": ["Varanasi", "Delhi"]
+}
+
+response:
+http_code:200 ok
+{
+    "trainNumber": 23454,
+    "trainName": "VandeBharat",
+    "stations": [
+        "Varanasi",
+        "Delhi"
+    ]
+}
+
+
+http://localhost:8085/train/remove
+{
+    "trainNo": 12345
+}
+OK
+
+http://localhost:8085/train/update
+
+
+{
+    "trainNumber": 12582,
+    "trainName": "VandeBharat",
+    "stations": ["Varanasi", "Delhi"]
+}
+
+
+http://localhost:8085/train/find
+
+Request:
+
+{
+    "source": "Varanasi",
+    "destination": "Lucknow"
+}
+Response:
+[
+    {
+        "trainNumber": 12345,
+        "trainName": "BSBSSUPERFAST",
+        "stations": [
+            "Delhi",
+            "Himachal"
+        ]
+    }
+]
